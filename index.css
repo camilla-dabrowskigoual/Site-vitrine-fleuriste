@@ -1,12 +1,12 @@
 /* EN-TETE */
 
 /* On retire les marges blanches de notre contenu */
-body{
+body {
     margin: 0%;
 }
 
 /*On met en forme l'en-tete : couleur, hauteur, répartition des élements */
-header{
+header {
     background-color: #797D87;
     height: 50px;
     display: flex;
@@ -15,13 +15,13 @@ header{
 }
 
 /*On positionne chaque lien entre eux*/
-nav{
+nav {
     display: flex;
     gap: 30px;
 }
 
 /* On met en formechaque lien de notre header*/
-nav a{
+nav a {
     text-decoration: none;
     font-family: 'pacifio';
     font-size: 18px;
@@ -29,10 +29,10 @@ nav a{
 }
 
 /*Mis en forme de la barre de recherche : arrondi, enlever bordure... */
-input{
+input {
     border-radius: 20px;
     background-color: lightgray;
-    width: 250px ;
+    width: 250px;
     height: 26px;
     border: none;
 }
@@ -40,7 +40,7 @@ input{
 /* CORPS */
 
 /* Mis en forme du titre */
-.title{
+.title {
     text-align: center;
     font-family: 'Pacifico', cursive;
     color: black;
@@ -50,12 +50,26 @@ input{
 
 
 
-article h3{
+article h3 {
     color: crimson;
     text-decoration: underline;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
+.services li {
+    margin-bottom: 20px;
+}
+
+.services {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+hr{
+    border: none;
+    border-top: 2.1px solid #999;
+    margin: 40px 10px;
+}
