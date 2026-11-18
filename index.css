@@ -1,0 +1,27 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    background-color: #797D87;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+nav{
+    display: flex;
+    gap: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+
