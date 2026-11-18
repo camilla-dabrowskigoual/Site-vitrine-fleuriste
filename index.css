@@ -1,3 +1,4 @@
+/* EN-TETE */
 
 /* On retire les marges blanches de notre contenu */
 body{
@@ -22,11 +23,12 @@ nav{
 /* On met en formechaque lien de notre header*/
 nav a{
     text-decoration: none;
-    font-family: Arial,sans-serif;
-    font-size: 16px;
+    font-family: 'pacifio';
+    font-size: 18px;
     color: black;
 }
 
+/*Mis en forme de la barre de recherche : arrondi, enlever bordure... */
 input{
     border-radius: 20px;
     background-color: lightgray;
@@ -35,4 +37,25 @@ input{
     border: none;
 }
 
+/* CORPS */
+
+/* Mis en forme du titre */
+.title{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: black;
+    letter-spacing: 2px;
+    transform: scale(1.1);
+}
+
+
+
+article h3{
+    color: crimson;
+    text-decoration: underline;
+}
+
+ul{
+    list-style: none;
+}
 
