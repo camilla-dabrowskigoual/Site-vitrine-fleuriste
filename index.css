@@ -1,27 +1,38 @@
+
+/* On retire les marges blanches de notre contenu */
 body{
     margin: 0%;
-    padding: 0%;
 }
 
+/*On met en forme l'en-tete : couleur, hauteur, répartition des élements */
 header{
     background-color: #797D87;
-    height: 35px;
+    height: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-
+/*On positionne chaque lien entre eux*/
 nav{
     display: flex;
-    gap: 25px;
+    gap: 30px;
 }
 
+/* On met en formechaque lien de notre header*/
 nav a{
     text-decoration: none;
     font-family: Arial,sans-serif;
     font-size: 16px;
     color: black;
+}
+
+input{
+    border-radius: 20px;
+    background-color: lightgray;
+    width: 250px ;
+    height: 26px;
+    border: none;
 }
 
 
