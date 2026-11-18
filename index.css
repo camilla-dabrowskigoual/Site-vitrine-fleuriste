@@ -2,16 +2,31 @@
 
 /* On retire les marges blanches de notre contenu */
 body {
-    margin: 0%;
+    margin: 10px auto 0;
+    max-width: 1300px;
+    background-color: #f5eee8;
 }
+
+.container{
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 5px 20px 20px;
+}
+
 
 /*On met en forme l'en-tete : couleur, hauteur, répartition des élements */
 header {
     background-color: #797D87;
-    height: 50px;
+    height: 60px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    min-width: 1300px;
+    margin-bottom: 40px;
+    padding: 0  80px;
+    box-sizing: border-box;
 }
 
 /*On positionne chaque lien entre eux*/
@@ -46,11 +61,12 @@ input {
     color: black;
     letter-spacing: 2px;
     transform: scale(1.1);
+    margin-top: 0;
 }
 
 
 
-article h3 {
+article h4 {
     color: crimson;
     text-decoration: underline;
 }
@@ -73,3 +89,9 @@ hr{
     border-top: 2.1px solid #999;
     margin: 40px 10px;
 }
+
+footer{background-color: #797D87;
+    height: 50px;
+    margin-top: 40px;
+}
+
