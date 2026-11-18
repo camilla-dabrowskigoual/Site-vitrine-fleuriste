@@ -95,3 +95,21 @@ footer{background-color: #797D87;
     margin-top: 40px;
 }
 
+.flowers1{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin : 0 10px;
+    gap : 15px;
+
+}
+
+.flowers1 img{
+    height: 145px;
+    width: 200px;
+    object-fit: cover;
+    box-sizing: content-box;
+    padding: 8px;
+    border: 2px solid #eeeeee;
+    
+}
