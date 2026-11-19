@@ -9,7 +9,7 @@ body {
 
 
 /* On place nos élements dans une page blanche selon la maquette*/
-.container{
+.container {
     background-color: white;
     padding: 20px;
     margin: 0 auto;
@@ -29,14 +29,14 @@ header {
     align-items: center;
     min-width: 1300px;
     margin-bottom: 40px;
-    padding: 0  80px;
+    padding: 0 80px;
     box-sizing: border-box;
 }
 
 
 /*On positionne chaque lien entre eux*/
 nav {
-    display:flex;
+    display: flex;
     gap: 30px;
     height: 100%;
 }
@@ -48,15 +48,15 @@ nav a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     color: black;
-    padding: 0px 15px; 
+    padding: 0px 15px;
     display: flex;
     align-items: center;
 }
 
 /* On utilise hover pour ajouter un effet quand on passe avec la souris */
 nav a:hover {
-color: #eeeeee;
-background-color: rgba(7, 6, 6, 0.132);
+    color: #eeeeee;
+    background-color: rgba(7, 6, 6, 0.132);
 }
 
 
@@ -83,8 +83,8 @@ input {
 }
 
 /* Changement de couleur quand on passe avec la souris sur le titre*/
-.title:hover{
-    color:crimson ;
+.title:hover {
+    color: crimson;
 }
 
 
@@ -102,7 +102,7 @@ ul {
 
 
 /* Barre grise selon la maquette */
-hr{
+hr {
     border: none;
     border-top: 2.1px solid #999;
     margin: 40px 0px;
@@ -110,93 +110,115 @@ hr{
 
 
 /*Mise en forme des élements dans la section flowers1*/
-.flowers1{
-    display: flex; /*alignement des élements les uns a côté des autres*/
-    justify-content:space-between;
-    align-items:center;
-    gap : 15px; /* espace entre chaque élement*/
+.flowers1 {
+    display: flex;
+    /*alignement des élements les uns a côté des autres*/
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    /* espace entre chaque élement*/
 }
 
 
 /*Mise en page de chaque image*/
-.flowers1 img{
+.flowers1 img {
     height: 145px;
     width: 200px;
-    object-fit: cover; /*permet à l'image de ne pas se deformer*/
-    box-sizing: content-box; /*permet de garder les dimensions de l'image même si on ajoute des paddings etc*/
-    padding: 8px; /*padding pour mettre une bordure autour de chaque image*/
-    border: 2px solid #eeeeee; /*solid pour que le trait de la bordure soit continu*/
+    object-fit: cover;
+    /*permet à l'image de ne pas se deformer*/
+    box-sizing: content-box;
+    /*permet de garder les dimensions de l'image même si on ajoute des paddings etc*/
+    padding: 8px;
+    /*padding pour mettre une bordure autour de chaque image*/
+    border: 2px solid #eeeeee;
+    /*solid pour que le trait de la bordure soit continu*/
 }
 
 /* Effet sur chaque image quand on passe dessus*/
-.flowers1 img:hover{
-    transform: scale(1.1); /*Elles augmentent de 1% (1.1)*/
+.flowers1 img:hover {
+    transform: scale(1.1);
+    /*Elles augmentent de 1% (1.1)*/
 }
 
 
 /* Ajustement des élements dans la section services*/
-.services{
+.services {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    gap : 20px; /*espace entre chaque élement*/
+    gap: 20px;
+    /*espace entre chaque élement*/
 }
 
 
 /*Mise en forme de chaque article et des élements qu'il contient*/
-.services article{
-    flex : 1; /*chaque article occupe la même place disponible dans la section services*/
-    display:flex;
-    flex-direction: column; /*les élements dans article sont en colonne*/
+.services article {
+    flex: 1;
+    /*chaque article occupe la même place disponible dans la section services*/
+    display: flex;
+    flex-direction: column;
+    /*les élements dans article sont en colonne*/
 }
 
 
 /*Mise en forme des read more*/
-.services a{
-    margin-top:auto; /*Met un espace au-dessus de read more pour que read more soit toujours en bas du paragrpahe*/
+.services a {
+    margin-top: auto;
+    /*Met un espace au-dessus de read more pour que read more soit toujours en bas du paragrpahe*/
     color: rgb(37, 135, 173);
-    text-decoration: none; /*on retire le trait sous le lien de read more*/
+    text-decoration: none;
+    /*on retire le trait sous le lien de read more*/
 }
 
 /* Modifie les élements en noir et gras quand on passe dessus*/
-.services a:hover{
-    color:black;
+.services a:hover {
+    color: black;
     font-weight: bolder;
 }
 
 
 /* On retire l'espace blanc en haut de chaque paragraphe*/
-.services p{
+.services p {
     margin-top: 0px;
 }
 
+
 /*Disposition de chaque titre avec le check*/
-.services h3{
+.services h3 {
     display: flex;
     align-items: center;
-    gap: 15px; /*espace entre le check et le titre*/
+    gap: 15px;
+    /*espace entre le check et le titre*/
     font-size: 17px;
-    white-space: nowrap; /*empeche le titre de passer à la ligne*/
-    margin-top: 0px; /*enlever l'espace blanc entre le titre et "Nos services"*/
+    white-space: nowrap;
+    /*empeche le titre de passer à la ligne*/
+    margin-top: 0px;
+    /*enlever l'espace blanc entre le titre et "Nos services"*/
 }
 
+
 /*Mise en forme du check*/
-.check{
+.check {
     display: flex;
     border: none;
-    border-radius: 50%; /*permet d'avoir un arrondi des bords*/
-    width: 20px; /* witdth égal au height ce qui permet d'avoir un cercle*/
+    border-radius: 50%;
+    /*permet d'avoir un arrondi des bords*/
+    width: 20px;
+    /* witdth égal au height ce qui permet d'avoir un cercle*/
     height: 20px;
-    font-size: 14px; /*taille de l'élement check*/
-    justify-content:center;
+    font-size: 14px;
+    /*taille de l'élement check*/
+    justify-content: center;
     align-items: center;
     background-color: rgb(15, 135, 205);
     color: #eeeeee;
 }
 
+
 /* Pied de page gris selon la maquette */
-footer{
+footer {
     background-color: #797D87;
     height: 50px;
-    margin-top: 40px; /*On ajoute un margin pour avoir un espace beige entre la page blanche et le pied de page gris*/
+    margin-top: 40px;
+    /*On ajoute un margin pour avoir un espace beige entre la page blanche et le pied de page gris*/
 }
