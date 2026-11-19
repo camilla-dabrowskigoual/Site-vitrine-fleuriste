@@ -1,4 +1,4 @@
-/* EN-TETE */
+/*Mis en place de la couleur beige et de la page blanche selon la maquette*/
 
 /* On retire les marges blanches de notre contenu */
 body {
@@ -7,6 +7,8 @@ body {
     background-color: #f5eee8;
 }
 
+
+/* On place nos élements dans une page blanche selon la maquette*/
 .container{
     background-color: white;
     padding: 20px;
@@ -15,6 +17,8 @@ body {
     padding: 5px 30px 20px;
 }
 
+
+/* EN-TETE*/
 
 /*On met en forme l'en-tete : couleur, hauteur, répartition des élements */
 header {
@@ -29,28 +33,32 @@ header {
     box-sizing: border-box;
 }
 
+
 /*On positionne chaque lien entre eux*/
 nav {
-    display: flex;
+    display:flex;
     gap: 30px;
     height: 100%;
 }
 
-/* On met en formechaque lien de notre header*/
+
+/* On met en forme chaque lien de notre header*/
 nav a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     color: black;
-    padding: 0px 15px;
+    padding: 0px 15px; 
     display: flex;
     align-items: center;
 }
 
+/* On utilise hover pour ajouter un effet quand on passe avec la souris */
 nav a:hover {
 color: #eeeeee;
 background-color: rgba(7, 6, 6, 0.132);
 }
+
 
 /*Mis en forme de la barre de recherche : arrondi, enlever bordure... */
 input {
@@ -60,6 +68,7 @@ input {
     height: 26px;
     border: none;
 }
+
 
 /* CORPS */
 
@@ -73,111 +82,121 @@ input {
     margin-top: 0;
 }
 
+/* Changement de couleur quand on passe avec la souris sur le titre*/
 .title:hover{
     color:crimson ;
 }
 
 
-
+/* Mis en forme des titres A propos, notre engagement...*/
 h4 {
     color: crimson;
     text-decoration: underline;
 }
 
+
+/* Mis en place d'une liste, sans puce */
 ul {
     list-style: none;
 }
 
-.services li {
-    margin-bottom: 20px;
-}
 
-.services {
-    margin-left: 0;
-    padding-left: 0;
-    margin-top: 0;
-}
-
+/* Barre grise selon la maquette */
 hr{
     border: none;
     border-top: 2.1px solid #999;
     margin: 40px 0px;
 }
 
-footer{
-    background-color: #797D87;
-    height: 50px;
-    margin-top: 40px;
-}
 
+/*Mis en forme des élements dans la section flowers1*/
 .flowers1{
-    display: flex;
+    display: flex; /*alignement des élements les uns a côté des autres*/
     justify-content:space-between;
     align-items:center;
-    margin : 0;
-    gap : 15px;
-
+    gap : 15px; /* espace entre chaque élement*/
 }
 
+
+/*Mis en page de chaque image*/
 .flowers1 img{
     height: 145px;
     width: 200px;
-    object-fit: cover;
-    box-sizing: content-box;
-    padding: 8px;
-    border: 2px solid #eeeeee;
+    object-fit: cover; /*permet à l'image de ne pas se deformer*/
+    box-sizing: content-box; /*permet de garder les dimensions de l'image même si on ajoute des paddings etc*/
+    padding: 8px; /*padding pour mettre une bordure autour de chaque image*/
+    border: 2px solid #eeeeee; /*solid pour que le trait de la bordure soit continu*/
 }
 
+/* Effet sur chaque image quand on passe dessus*/
 .flowers1 img:hover{
-    transform: scale(1.1);
+    transform: scale(1.1); /*Elles augmentent de 1% (1.1)*/
 }
 
+
+/* Ajustement des élements dans la section services*/
 .services{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    gap : 20px;
+    gap : 20px; /*espace entre chaque élement*/
 }
 
+
+/*Mis en forme de chaque article et des élements qu'il contient*/
 .services article{
-    flex : 1;
-    display: flex;
-    flex-direction: column;
+    flex : 1; /*chaque article occupe la même place disponible dans la section services*/
+    display:flex;
+    flex-direction: column; /*les élements dans article sont en colonne*/
 }
 
+
+/*Mis en forme des read more*/
 .services a{
-    margin-top:auto;
+    margin-top:auto; /*Met un espace au-dessus de read more pour que read more soit toujours en bas du paragrpahe*/
     color: rgb(37, 135, 173);
-    text-decoration: none;
+    text-decoration: none; /*on retire le trait sous le lien de read more*/
 }
 
+/* Modifie les élements en noir et gras quand on passe dessus*/
 .services a:hover{
     color:black;
     font-weight: bolder;
 }
 
-.services h3{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-size: 17px;
-    white-space: nowrap;
-    margin-top: 0px;
-}
 
+/* On retire l'espace blanc en haut de chaque paragraphe*/
 .services p{
     margin-top: 0px;
 }
 
+/*Disposition de chaque titre avec le check*/
+.services h3{
+    display: flex;
+    align-items: center;
+    gap: 15px; /*espace entre le check et le titre*/
+    font-size: 17px;
+    white-space: nowrap; /*empeche le titre de passer à la ligne*/
+    margin-top: 0px; /*enlever l'espace blanc entre le titre et "Nos services"*/
+}
+
+/*Mis en forme du check*/
 .check{
-    display: inline-flex;
+    display: flex;
     border: none;
-    border-radius: 50%;
-    width: 20px;
+    border-radius: 50%; /*permet d'avoir un arrondi des bords*/
+    width: 20px; /* witdth égal au height ce qui permet d'avoir un cercle*/
     height: 20px;
-    font-size: 14px;
+    font-size: 14px; /*taille de l'élement check*/
     justify-content:center;
     align-items: center;
     background-color: rgb(15, 135, 205);
     color: #eeeeee;
+}
+
+/* Pied de page gris selon la maquette */
+footer{
+    background-color: #797D87;
+    height: 50px;
+    margin-top: 40px; /*On ajoute un margin pour avoir un espace beige entre la page blanche et le pied de page gris*/
 }
