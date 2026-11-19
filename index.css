@@ -59,6 +59,7 @@ nav a:hover {
     background-color: rgba(7, 6, 6, 0.132);
 }
 
+/*Mise en forme des barres entre les liens*/
 nav span{
     font-size: 20px;
     color: black;
@@ -240,24 +241,24 @@ hr {
 footer {
     background-color: #797D87;
     height: 50px;
-    margin-top: 40px;
-    /*On ajoute un margin pour avoir un espace beige entre la page blanche et le pied de page gris*/
-}
-
-footer{
+    margin-top: 40px; /*On ajoute un margin pour avoir un espace beige entre la page blanche et le pied de page gris*/
     display: flex;
     justify-content: center;
     align-items: end;
     justify-content: space-around;
 }
 
+
+/*Mise en forme des liens au pied de page*/
 footer a{
     font-size: 12px;
     color: white;
     font-weight: bold;
     text-decoration: none;
+    transform: translateY(-5px);
 }
 
+/*Mise en forme des liens quand on passe dessus avec la souris*/
 footer a:hover{
     text-decoration:none;
     text-decoration:overline;
