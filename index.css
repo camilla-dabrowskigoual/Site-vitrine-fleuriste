@@ -11,7 +11,6 @@ body {
 /* On place nos élements dans une page blanche selon la maquette*/
 .container {
     background-color: white;
-    padding: 20px;
     margin: 0 auto;
     max-width: 1100px;
     padding: 5px 30px 20px;
@@ -60,7 +59,7 @@ nav a:hover {
 }
 
 /*Mise en forme des barres entre les liens*/
-nav span{
+nav span {
     font-size: 20px;
     color: black;
     align-self: center;
@@ -241,7 +240,8 @@ hr {
 footer {
     background-color: #797D87;
     height: 50px;
-    margin-top: 40px; /*On ajoute un margin pour avoir un espace beige entre la page blanche et le pied de page gris*/
+    margin-top: 40px;
+    /*On ajoute un margin pour avoir un espace beige entre la page blanche et le pied de page gris*/
     display: flex;
     justify-content: center;
     align-items: end;
@@ -250,7 +250,7 @@ footer {
 
 
 /*Mise en forme des liens au pied de page*/
-footer a{
+footer a {
     font-size: 12px;
     color: white;
     font-weight: bold;
@@ -259,7 +259,7 @@ footer a{
 }
 
 /*Mise en forme des liens quand on passe dessus avec la souris*/
-footer a:hover{
-    text-decoration:none;
-    text-decoration:overline;
+footer a:hover {
+    text-decoration: none;
+    text-decoration: overline;
 }
