@@ -41,6 +41,12 @@ nav a {
     font-family: 'pacifio';
     font-size: 18px;
     color: black;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+color: #eeeeee;
+background-color: rgba(7, 6, 6, 0.132);
 }
 
 /*Mis en forme de la barre de recherche : arrondi, enlever bordure... */
@@ -62,6 +68,10 @@ input {
     letter-spacing: 2px;
     transform: scale(1.1);
     margin-top: 0;
+}
+
+.title:hover{
+    color:crimson ;
 }
 
 
@@ -115,6 +125,10 @@ footer{
     border: 2px solid #eeeeee;
 }
 
+.flowers1 img:hover{
+    transform: scale(1.1);
+}
+
 .services{
     display: flex;
     justify-content: space-between;
@@ -132,6 +146,11 @@ footer{
     margin-top:auto;
     color: rgb(37, 135, 173);
     text-decoration: none;
+}
+
+.services a:hover{
+    color:black;
+    font-weight: bolder;
 }
 
 .services h3{
