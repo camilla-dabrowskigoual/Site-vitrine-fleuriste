@@ -1,4 +1,4 @@
-🌸 BloomPetals – Site vitrine de fleuriste
+# 🌸 BloomPetals – Site vitrine de fleuriste
 
 ## 📖 Présentation
 
