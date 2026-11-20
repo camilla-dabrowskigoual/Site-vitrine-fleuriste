@@ -260,6 +260,5 @@ footer a {
 
 /*Mise en forme des liens quand on passe dessus avec la souris*/
 footer a:hover {
-    text-decoration: none;
     text-decoration: overline;
 }
